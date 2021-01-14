@@ -674,7 +674,7 @@ header {
 .ftr-address {
   padding-top: 20px;
 }
-.footer-enjoy {
+.footer.enjoy {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -720,4 +720,12 @@ header {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+.subscribe {
+  margin-top: 12px;
+  margin-left: 93px;
+}
+.subscribe-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
