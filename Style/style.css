@@ -158,9 +158,7 @@ header {
   fill: currentColor;
 }
 
-/* portfolio */
-
-/* buttons */
+/* portfolio buttons */
 
 .port-section {
   padding-top: 81px;
@@ -198,7 +196,7 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* cards */
+/* portfolio cards */
 
 .port-box {
   padding: 0px;
