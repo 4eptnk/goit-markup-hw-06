@@ -473,8 +473,21 @@
         </div>
         <div class="subscribe">
           <p class="footer enjoy">подпишитесь на рассылку</p>
-          <input class="subscribe-input" type="email" />
-          <label for="email">Подписаться</label>
+          <form class="form">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              id="name"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-btn" for="email">
+              Подписаться
+              <svg class="svg-subscribe" width="24" height="24">
+                <use href="./svg/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
