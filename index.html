@@ -82,46 +82,54 @@
                   </p>
                 </div>
                 <div class="inputs">
-                  <label for="name">
+                  <label class="label name" for="name">
+                    <svg class="svg name" width="12" height="12">
+                      <use href="./svg/symbol-defs.svg#svg-name"></use>
+                    </svg>
                     <input
                       class="input name"
                       type="name"
                       name="Имя"
                       id="name"
-                      placeholder="Имя"
                     />
                   </label>
-                  <label for="phone">
+                  <label class="label phone" for="phone">
+                    <svg class="svg phone" width="14" height="14">
+                      <use href="./svg/symbol-defs.svg#svg-phone"></use>
+                    </svg>
                     <input
                       class="input phone"
                       type="phone"
                       name="Телефон"
                       id="phone"
-                      placeholder="Телефон"
                     />
                   </label>
-                  <label for="mail">
+                  <label class="label mail" for="mail">
+                    <svg class="svg mail" width="16" height="12">
+                      <use href="./svg/symbol-defs.svg#svg-mail"></use>
+                    </svg>
                     <input
                       class="input mail"
                       type="email"
                       name="Почта"
                       id="mail"
-                      placeholder="Почта"
                     />
                   </label>
-                  <label for="comments">
-                    <textarea
-                      class="input comments"
-                      name="comments"
-                      id="comments"
-                      placeholder="Введите текст"
-                    ></textarea>
-                  </label>
+                  <textarea
+                    class="input comments"
+                    name="comments"
+                    placeholder="Введите текст"
+                  >
+                  </textarea>
                 </div>
-                <div>
-                  <input type="checkbox" name="" id="" />
-                  <p>Соглашаюсь с рассылкой и принимаю</p>
-                  <a href="#">Условия договора</a>
+                <div class="policy-box">
+                  <input class="checkbox" type="checkbox" name="checkbox" />
+                  <p class="policy-text">
+                    Соглашаюсь с рассылкой и принимаю
+                    <span class="policy-container">
+                      <a class="policy-link" href="#">Условия договора</a>
+                    </span>
+                  </p>
                 </div>
                 <button class="modal-button" type="submit">Отправить</button>
               </form>
@@ -531,7 +539,7 @@
               id="name"
               placeholder="E-mail"
             />
-            <button type="submit" class="subscribe-btn" for="email">
+            <button type="submit" class="subscribe-btn">
               Подписаться
               <svg class="svg-subscribe" width="24" height="24">
                 <use href="./svg/symbol-defs.svg#icon-send"></use>

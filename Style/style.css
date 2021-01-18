@@ -43,6 +43,9 @@ button {
 textarea {
   resize: none;
 }
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
 /* header */
 header {
   border-bottom: 1px solid #ececec;
@@ -416,11 +419,18 @@ header {
 .inputs {
   margin: 12px 40px 20px 40px;
 }
+.label {
+  position: relative;
+}
+.svg {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
 .input {
   width: 448px;
   height: 40px;
-
-  padding: 11px 12px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -439,11 +449,37 @@ header {
   height: 120px;
 
   padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: 1.16;
+}
+.policy-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox {
+  margin-right: 8.38px;
+}
+.policy-text {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+.policy-link {
+  color: var(--main-logo-color);
+  border-bottom: 1px solid var(--main-logo-color);
 }
 .modal-button {
   width: 200px;
   height: 50px;
   padding: 10px 55px 10px 56px;
+  margin: 30px 164px 37px 164px;
 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
