@@ -82,53 +82,50 @@
                   </p>
                 </div>
                 <div class="inputs">
-                  <label class="label name" for="name">
-                    <svg class="svg name" width="12" height="12">
-                      <use href="./svg/symbol-defs.svg#svg-name"></use>
-                    </svg>
-                    <input
-                      class="input name"
-                      type="name"
-                      name="Имя"
-                      id="name"
-                    />
-                  </label>
-                  <label class="label phone" for="phone">
-                    <svg class="svg phone" width="14" height="14">
-                      <use href="./svg/symbol-defs.svg#svg-phone"></use>
-                    </svg>
-                    <input
-                      class="input phone"
-                      type="phone"
-                      name="Телефон"
-                      id="phone"
-                    />
-                  </label>
-                  <label class="label mail" for="mail">
-                    <svg class="svg mail" width="16" height="12">
-                      <use href="./svg/symbol-defs.svg#svg-mail"></use>
-                    </svg>
-                    <input
-                      class="input mail"
-                      type="email"
-                      name="Почта"
-                      id="mail"
-                    />
-                  </label>
-                  <textarea
-                    class="input comments"
-                    name="comments"
-                    placeholder="Введите текст"
-                  >
-                  </textarea>
+                  <div class="label">
+                    <label>
+                      <span class="input-text">Имя</span>
+                      <svg class="svg name" width="12" height="12">
+                        <use href="./svg/symbol-defs.svg#svg-name"></use>
+                      </svg>
+                      <input class="input name" type="name" name="Имя" />
+                    </label>
+                  </div>
+                  <div class="label">
+                    <label>
+                      <span class="input-text">Телефон</span>
+                      <svg class="svg phone" width="14" height="14">
+                        <use href="./svg/symbol-defs.svg#svg-phone"></use>
+                      </svg>
+                      <input class="input phone" type="phone" name="Телефон" />
+                    </label>
+                  </div>
+                  <div class="label">
+                    <label>
+                      <span class="input-text">Почта</span>
+                      <svg class="svg mail" width="16" height="12">
+                        <use href="./svg/symbol-defs.svg#svg-mail"></use>
+                      </svg>
+                      <input class="input mail" type="email" name="Почта" />
+                    </label>
+                  </div>
+                  <div class="label">
+                    <label>
+                      <span class="input-text">Комментарий</span>
+                      <textarea
+                        placeholder="Введите текст"
+                        class="input comments"
+                        name="comments"
+                      >
+                      </textarea>
+                    </label>
+                  </div>
                 </div>
                 <div class="policy-box">
                   <input class="checkbox" type="checkbox" name="checkbox" />
                   <p class="policy-text">
                     Соглашаюсь с рассылкой и принимаю
-                    <span class="policy-container">
-                      <a class="policy-link" href="#">Условия договора</a>
-                    </span>
+                    <a class="policy-link" href="#">Условия договора</a>
                   </p>
                 </div>
                 <button class="modal-button" type="submit">Отправить</button>
