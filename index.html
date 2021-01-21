@@ -85,28 +85,28 @@
                   <div class="label">
                     <label>
                       <span class="input-text">Имя</span>
+                      <input class="input name" type="name" name="Имя" />
                       <svg class="svg name" width="12" height="12">
                         <use href="./svg/symbol-defs.svg#svg-name"></use>
                       </svg>
-                      <input class="input name" type="name" name="Имя" />
                     </label>
                   </div>
                   <div class="label">
                     <label>
                       <span class="input-text">Телефон</span>
+                      <input class="input phone" type="phone" name="Телефон" />
                       <svg class="svg phone" width="14" height="14">
                         <use href="./svg/symbol-defs.svg#svg-phone"></use>
                       </svg>
-                      <input class="input phone" type="phone" name="Телефон" />
                     </label>
                   </div>
                   <div class="label">
                     <label>
                       <span class="input-text">Почта</span>
+                      <input class="input mail" type="email" name="Почта" />
                       <svg class="svg mail" width="16" height="12">
                         <use href="./svg/symbol-defs.svg#svg-mail"></use>
                       </svg>
-                      <input class="input mail" type="email" name="Почта" />
                     </label>
                   </div>
                   <div class="label">
@@ -116,17 +116,26 @@
                         placeholder="Введите текст"
                         class="input comments"
                         name="comments"
-                      >
-                      </textarea>
+                      ></textarea>
                     </label>
                   </div>
                 </div>
-                <div class="policy-box">
-                  <input class="checkbox" type="checkbox" name="checkbox" />
-                  <p class="policy-text">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a class="policy-link" href="#">Условия договора</a>
-                  </p>
+                <div>
+                  <label class="policy-box">
+                    <svg class="svg-mail" width="16" height="15">
+                      <use href="./svg/symbol-defs.svg#svg-mail"></use>
+                    </svg>
+                    <input
+                      class="checkbox visually-hidden"
+                      type="checkbox"
+                      name="checkbox"
+                    />
+                    <div class="checkbox-icon"></div>
+                    <p class="policy-text">
+                      Соглашаюсь с рассылкой и принимаю
+                      <a class="policy-link" href="#">Условия договора</a>
+                    </p>
+                  </label>
                 </div>
                 <button class="modal-button" type="submit">Отправить</button>
               </form>

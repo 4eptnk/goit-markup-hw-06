@@ -46,6 +46,13 @@ textarea {
 textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 /* header */
 header {
   border-bottom: 1px solid #ececec;
@@ -423,9 +430,6 @@ header {
   position: relative;
   margin-top: 28px;
 }
-.label:focus-within {
-  color: var(--main-logo-color);
-}
 .svg {
   position: absolute;
   top: 50%;
@@ -463,6 +467,12 @@ header {
 
   color: var(--main-text-color);
 }
+.input:focus {
+  border-color: var(--main-logo-color);
+}
+.input:focus + .svg {
+  fill: var(--main-logo-color);
+}
 .input.comments {
   width: 448px;
   height: 120px;
@@ -477,8 +487,18 @@ header {
   justify-content: center;
   align-items: center;
 }
-.checkbox {
+.checkbox-icon {
   margin-right: 8.38px;
+}
+.checkbox:checked ~ .checkbox-icon {
+  background-color: var(--main-logo-color);
+}
+.checkbox-icon {
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
 }
 .policy-text {
   margin: 0;
