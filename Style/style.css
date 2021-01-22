@@ -491,7 +491,9 @@ header {
   justify-content: center;
   align-items: center;
 }
-.svg-box {
+.svg-policy {
+  width: 16px;
+  height: 15px;
   position: relative;
   left: 2px;
 
@@ -505,7 +507,7 @@ header {
 .checkbox:checked ~ .checkbox-icon {
   opacity: 0;
 }
-.checkbox:checked ~ .svg-box {
+.checkbox:checked ~ .svg-policy {
   opacity: 1;
 }
 .checkbox-icon {
