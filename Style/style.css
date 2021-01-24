@@ -130,7 +130,7 @@ header {
   display: flex;
   padding-bottom: 39.5px;
   padding-top: 39.5px;
-  margin-left: 350px;
+  margin-left: 288px;
 
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -395,6 +395,9 @@ header {
   top: 0;
   right: 0;
 
+  align-items: center;
+  justify-content: center;
+
   box-sizing: border-box;
 
   margin: 8px 8px;
@@ -403,6 +406,13 @@ header {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: var(--animation-function);
+}
+.close-box :focus,
+.close-box :hover {
+  fill: var(--main-logo-color);
+  color: var(--main-logo-color);
 }
 .title-box {
   display: flex;
@@ -890,7 +900,7 @@ header {
 }
 .subscribe {
   margin-top: 12px;
-  margin-left: 93px;
+  margin-left: 109px;
 }
 .subscribe-input {
   font-weight: 500;
